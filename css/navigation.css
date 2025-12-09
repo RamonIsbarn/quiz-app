@@ -1,0 +1,22 @@
+.navigation {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 70px;
+}
+.navigation__link {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+}
+.navigation__link img {
+  width: 45px;
+  filter: invert(100%);
+}
+.navigation__link.active,
+.navigation__link:hover {
+  background-color: var(--darkblue);
+}
