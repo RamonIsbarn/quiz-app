@@ -1,0 +1,78 @@
+.main-content {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
+}
+
+/* general card style */
+.card {
+  position: relative;
+  background-color: #ddd;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* card bookmark style */
+.card__bookmark {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  width: 60px;
+}
+
+/* card question style */
+.card h2 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* card answer style */
+.card__answer {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.card__answer--hidden {
+  visibility: hidden;
+}
+
+/* card button style */
+.card__button {
+  font-size: 20px;
+  border: 3px solid var(--blue);
+  border-radius: 50px;
+  padding: 15px 30px;
+  background-color: var(--blue);
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card__button:hover {
+  background-color: var(--darkblue);
+  border-color: var(--darkblue);
+  color: #fff;
+}
+.card__button--hide {
+  background-color: #fff;
+  color: var(--blue);
+  border-color: var(--darkblue);
+}
+
+/* card tags style */
+.card__tags {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0;
+  gap: 5px;
+}
+.card__tags li {
+  background-color: #bbb;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
