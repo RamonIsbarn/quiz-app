@@ -1,7 +1,14 @@
+:root {
+  --blue: #144bc2;
+  --darkblue: #0f3b99;
+}
 * {
   box-sizing: border-box;
   margin: 0;
 }
 body {
   font-family: "Roboto", sans-serif;
+}
+main {
+  padding-top: 100px;
 }
