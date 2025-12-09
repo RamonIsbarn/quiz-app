@@ -1,0 +1,82 @@
+/* style user profile first section */
+.user-profile__name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.user-profile__name img {
+  width: 100px;
+}
+.user-profile__name h2 {
+  font-size: 25px;
+}
+
+/* style user profile text */
+.user-profile__about h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.user-profile__about {
+  margin-bottom: 30px;
+}
+
+/* style user profile counters */
+.counter,
+.counter__item {
+  display: flex;
+}
+.counter {
+  justify-content: space-around;
+}
+.counter__item {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 25px;
+  width: 120px;
+}
+.counter__item img {
+  width: 35px;
+}
+
+/*style settings*/
+.settings h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.settings__darkmode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings__darkmode label {
+  font-size: 20px;
+  user-select: none;
+}
+.settings__darkmode button {
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 25px;
+  width: 120px;
+  border: none;
+  text-align: left;
+  height: 65px;
+  position: relative;
+}
+.settings__darkmode button:focus {
+  text-align: right;
+}
+.settings__darkmode button span {
+  font-size: 100px;
+  position: absolute;
+  top: -39px;
+  left: 4px;
+}
+.settings__darkmode button:focus span {
+  left: 55px;
+}
