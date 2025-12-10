@@ -1,15 +1,20 @@
 /* style user profile first section */
-.user-profile__name {
+.profile-name {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-bottom: 30px;
 }
-.user-profile__name img {
+.profile-name img {
   width: 100px;
 }
-.user-profile__name h2 {
+.profile-name h2 {
   font-size: 25px;
+}
+
+.user-profile {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
 }
 
 /* style user profile text */
@@ -19,6 +24,9 @@
 }
 .user-profile__about {
   margin-bottom: 30px;
+}
+.user-profile h2 {
+  margin-bottom: 20px;
 }
 
 /* style user profile counters */
@@ -62,24 +70,24 @@
   padding: 15px;
   border-radius: 50px;
   font-size: 25px;
-  width: 90px;
+  width: 60px;
   border: none;
   text-align: left;
-  height: 55px;
+  height: 40px;
   position: relative;
 }
 .settings__darkmode button:hover {
   background-color: #ccc;
 }
 .settings__darkmode button span {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   background-color: #000;
   border-radius: 50px;
   position: absolute;
   top: 8px;
-  left: 11px;
+  left: 8px;
 }
 .settings__darkmode button:focus span {
-  left: 40px;
+  left: 28px;
 }

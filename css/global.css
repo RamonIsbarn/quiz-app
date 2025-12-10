@@ -16,3 +16,34 @@ main {
 button {
   cursor: pointer;
 }
+
+/* tablet styles */
+@media screen and (min-width: 600px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+  }
+  .main-content__profile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .user-profile {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  .navigation,
+  .main-content {
+    max-width: 1200px;
+  }
+  .main-content {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-content__profile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

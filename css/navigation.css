@@ -1,11 +1,17 @@
-.navigation {
+nav {
   position: fixed;
   bottom: 0;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
+}
+.navigation {
   width: 100vw;
   height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .navigation__link {
   background-color: var(--blue);
