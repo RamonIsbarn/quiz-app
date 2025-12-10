@@ -13,3 +13,6 @@ main {
   padding-top: 100px;
   padding-bottom: 70px;
 }
+button {
+  cursor: pointer;
+}
