@@ -20,6 +20,15 @@
   top: -25px;
   right: 20px;
   width: 60px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.card__bookmark img {
+  width: 60px;
+}
+.card__bookmark img:hover {
+  filter: invert(20%);
 }
 
 /* card question style */
@@ -49,7 +58,6 @@
   margin-bottom: 40px;
   color: #fff;
   font-weight: bold;
-  cursor: pointer;
 }
 .card__button:hover {
   background-color: var(--darkblue);
