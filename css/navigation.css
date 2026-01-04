@@ -11,7 +11,7 @@ nav {
   width: 100vw;
   height: 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .navigation__link {
   background-color: var(--blue);

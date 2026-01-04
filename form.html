@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>CSS and HTML Quiz</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="js/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>CSS and HTML Quiz</h1>
+    </header>
+    <nav>
+      <section class="navigation">
+        <a class="navigation__link" href="index.html"
+          ><img src="assets/house.svg" alt="a house icon"
+        /></a>
+        <a class="navigation__link" href="bookmarks.html"
+          ><img src="assets/bookmark.svg" alt="a bookmark icon"
+        /></a>
+        <a class="navigation__link active" href="form.html"
+          ><img src="assets/add.svg" alt="a icon of a plus within a circle"
+        /></a>
+        <a class="navigation__link" href="profile.html"
+          ><img src="assets/circle-user.svg" alt="a icon of a circled user"
+        /></a>
+      </section>
+    </nav>
+    <main>
+      <section class="main-content">
+        <form data-js="form">
+          <section>
+            <label for="question">Your question</label>
+            <textarea
+              id="question"
+              name="formQuestion"
+              maxlength="150"
+              data-js="form-question"
+            ></textarea>
+            <p class="answer-counter" data-js="question-counter">
+              150 characters left
+            </p>
+          </section>
+          <section>
+            <label for="answer">Your answer</label>
+            <textarea
+              id="answer"
+              name="formAnswer"
+              maxlength="150"
+              data-js="form-answer"
+            ></textarea>
+            <p class="answer-counter" data-js="answer-counter">
+              150 characters left
+            </p>
+          </section>
+          <section>
+            <label for="tags">Tag</label>
+            <input id="tags" type="text" name="formTag" />
+          </section>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+        <div data-js="new-card"></div>
+      </section>
+    </main>
+  </body>
+</html>
