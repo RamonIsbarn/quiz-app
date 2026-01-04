@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
+    <script src="js/toggle.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,14 +33,20 @@
     <main>
       <section class="main-content">
         <article class="card">
-          <button class="card__bookmark card__bookmark--unchecked">
-            <img src="assets/bookmark.svg" alt="a bookmark icon" />
+          <button class="card__bookmark" data-js="bookmark">
+            <img
+              src="assets/bookmark.svg"
+              alt="a bookmark icon"
+              data-js="bookmark-img"
+            />
           </button>
           <h2>What does CSS stand for?</h2>
-          <h3 class="card__answer card__answer--hidden">
+          <h3 class="card__answer card__answer--hidden" data-js="answer">
             Cascading Style Sheets
           </h3>
-          <button class="card__button card__button--show">Show Answer</button>
+          <button class="card__button" data-js="answer-button">
+            Show Answer
+          </button>
           <ul class="card__tags">
             <li>CSS</li>
             <li>Web Development</li>
@@ -54,7 +61,7 @@
             Which HTML tag is used to link an external CSS file to an HTML
             document?
           </h2>
-          <h3 class="card__answer card__answer--visible">&lt;link&gt;</h3>
+          <h3 class="card__answer">&lt;link&gt;</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>HTML</li>
@@ -67,7 +74,7 @@
             <img src="assets/bookmark-checked.svg" alt="a bookmark icon" />
           </button>
           <h2>What is the purpose of the HTML &lt;div&gt; element?</h2>
-          <h3 class="card__answer card__answer--visible">
+          <h3 class="card__answer">
             It is a container element used to group and style content together.
           </h3>
           <button class="card__button card__button--hide">Hide Answer</button>
@@ -84,7 +91,7 @@
           <h2>
             Which CSS property is used to change the text color of an element?
           </h2>
-          <h3 class="card__answer card__answer--visible">color</h3>
+          <h3 class="card__answer">color</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>CSS</li>
@@ -93,11 +100,11 @@
           </ul>
         </article>
         <article class="card">
-          <button class="card__bookmark card__bookmark--unchecked">
+          <button class="card__bookmark">
             <img src="assets/bookmark.svg" alt="a bookmark icon" />
           </button>
           <h2>What is the default display property for most HTML elements?</h2>
-          <h3 class="card__answer card__answer--visible">block</h3>
+          <h3 class="card__answer">block</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>CSS</li>
@@ -106,13 +113,11 @@
           </ul>
         </article>
         <article class="card">
-          <button class="card__bookmark card__bookmark--unchecked">
+          <button class="card__bookmark">
             <img src="assets/bookmark.svg" alt="a bookmark icon" />
           </button>
           <h2>How can you center an element horizontally in CSS?</h2>
-          <h3 class="card__answer card__answer--visible">
-            By setting its margin property to auto.
-          </h3>
+          <h3 class="card__answer">By setting its margin property to auto.</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>CSS</li>
@@ -128,7 +133,7 @@
             What is the CSS pseudo-class used to select the first child of an
             element?
           </h2>
-          <h3 class="card__answer card__answer--visible">:first-child</h3>
+          <h3 class="card__answer">:first-child</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>CSS</li>
@@ -137,11 +142,11 @@
           </ul>
         </article>
         <article class="card">
-          <button class="card__bookmark card__bookmark--unchecked">
+          <button class="card__bookmark">
             <img src="assets/bookmark.svg" alt="a bookmark icon" />
           </button>
           <h2>Which HTML tag is used to create an ordered (numbered) list?</h2>
-          <h3 class="card__answer card__answer--visible">&lt;ol&gt;</h3>
+          <h3 class="card__answer">&lt;ol&gt;</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>HTML</li>
@@ -157,7 +162,7 @@
             In CSS, what property is used to control the spacing between lines
             of text within an element?
           </h2>
-          <h3 class="card__answer card__answer--visible">line-height</h3>
+          <h3 class="card__answer">line-height</h3>
           <button class="card__button card__button--hide">Hide Answer</button>
           <ul class="card__tags">
             <li>CSS</li>
@@ -166,11 +171,11 @@
           </ul>
         </article>
         <article class="card">
-          <button class="card__bookmark card__bookmark--unchecked">
+          <button class="card__bookmark">
             <img src="assets/bookmark.svg" alt="a bookmark icon" />
           </button>
           <h2>What does the term "responsive web design" refer to?</h2>
-          <h3 class="card__answer card__answer--visible">
+          <h3 class="card__answer">
             It refers to designing web pages that adapt and display well on
             various screen sizes and devices.
           </h3>
