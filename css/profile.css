@@ -56,30 +56,29 @@
   font-size: 25px;
   margin-bottom: 20px;
 }
-.settings__darkmode {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .settings__darkmode label {
   font-size: 20px;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
 }
-.settings__darkmode button {
+
+.settings__darkmode input {
+  opacity: 0;
+}
+
+.settings__darkmode .settings__darkmode--checkbox {
   background-color: #ddd;
-  padding: 15px;
   border-radius: 50px;
-  font-size: 25px;
   width: 60px;
-  border: none;
-  text-align: left;
   height: 40px;
   position: relative;
+  cursor: pointer;
 }
-.settings__darkmode button:hover {
+.settings__darkmode .settings__darkmode--checkbox:hover {
   background-color: #ccc;
 }
-.settings__darkmode button span {
+.settings__darkmode .settings__darkmode--checkbox span {
   width: 24px;
   height: 24px;
   background-color: #000;
@@ -88,6 +87,30 @@
   top: 8px;
   left: 8px;
 }
-.settings__darkmode button:focus span {
+.settings__darkmode input:checked ~ .settings__darkmode--checkbox span {
   left: 28px;
+}
+
+/* darkmode */
+body.darkmode {
+  background-color: #222;
+  color: #eee;
+}
+
+body.darkmode .profile-name img,
+body.darkmode .counter__item img {
+  filter: invert(93%);
+}
+
+body.darkmode .counter__item,
+body.darkmode .settings__darkmode--checkbox {
+  background-color: #111;
+}
+
+body.darkmode .settings__darkmode--checkbox:hover {
+  background-color: #000;
+}
+
+body.darkmode .settings__darkmode--checkbox span {
+  background-color: #eee;
 }
