@@ -11,8 +11,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
+    <script src="js/darkmode.js" defer></script>
   </head>
-  <body>
+  <body data-js="html-body">
     <header>
       <h1>CSS and HTML Quiz</h1>
     </header>
@@ -69,8 +70,15 @@
           <section class="settings">
             <h2>Settings</h2>
             <section class="settings__darkmode">
-              <label for="darkmode-toggle">Dark Mode</label>
-              <button id="darkmode-toggle"><span></span></button>
+              <label for="darkmode-toggle"
+                >Dark Mode
+                <input
+                  id="darkmode-toggle"
+                  type="checkbox"
+                  data-js="dark-mode-toggle"
+                />
+                <span class="settings__darkmode--checkbox"><span></span></span>
+              </label>
             </section>
           </section>
         </section>
